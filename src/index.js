@@ -1,17 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import App from './containers/App';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+// import './index.css';
+// import { robots } from './robots';
+// import Hello from './Hello';
+// import Card from './Card';
+// import CardList from './CardList';
+import 'tachyons';  // we may import 'tachyons' here or any clild component all works fine
+
+// import reportWebVitals from './reportWebVitals';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    < App />
+    {/* <div>
+      <h1>Robo Friends</h1>
+      < CardList robots={robots} />
+  </div> */}
+    {/* < Hello greetings={'Hello' + " Ninja"} /> */}
+  </React.StrictMode >
 );
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// reportWebVitals();
