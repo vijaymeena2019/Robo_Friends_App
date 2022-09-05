@@ -1,8 +1,11 @@
 import Card from './Card';
-import React, { component } from 'react';
+import React from 'react';
 // import { robots } from './robots'
 //const cardArray = robots.map((robot, index) => < Card id={robot.id} key={index} name={robot.name} email={robot.email} username={robot.username} />)  // each child should have a unique key
 const CardList = ({ robots }) => {   // props.robots   destructure
+    // if (true) {  // to check for ErrorBoundry Component
+    //     throw new Error('Nooooo!');
+    // }
     return (
         <div>
             {/* {cardArray} */}
